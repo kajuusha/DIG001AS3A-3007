@@ -6,8 +6,8 @@ find . -type f -name "*.py" | grep -q . && echo "- Python" >> $REPORT
 find . -type f -name "*.java" | grep -q . && echo "- Java" >> $REPORT
 find . -type f -name "*.js" | grep -q . && echo "- JavaScript" >> $REPORT
 find . -type f -name "*.ts" | grep -q . && echo "- TypeScript" >> $REPORT
-find . -type f -name " *.html" | grep -q . && echo "- HTML" >> $REPORT
-find . -type f -name " *.css" | grep -q . && echo "- CSS" >> $REPORT
+find . -type f -name "*.html" | grep -q . && echo "- HTML" >> $REPORT
+find . -type f -name "*.css" | grep -q . && echo "- CSS" >> $REPORT
 
 echo "" >> $REPORT
 
