@@ -9,7 +9,7 @@ find . -type f -name "*.ts" | grep -q . && echo "- TypeScript" >> $REPORT
 find . -type f -name " *. html" | grep -q . && echo "- HTML" >> $REPORT
 find . -type f -name " *. css" | grep -q . && echo "- CSS" >> $REPORT
 
-echo "" REPORT
+echo "" $REPORT
 
 echo "Design patterns detected:" >> $REPORT
 
