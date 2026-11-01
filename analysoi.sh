@@ -18,3 +18,5 @@ grep -R "create[A-Z]" -n . && echo "- Factory Method" >> $REPORT
 grep -R "notify" -n . && echo "- Observer" >> $REPORT
 grep -R "Strategy" -n . && echo "- Strategy" >> $REPORT
 grep -R "Decorator" -n . && echo "- Decorator" >> $REPORT 
+
+cat "$REPORT"
