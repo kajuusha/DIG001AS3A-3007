@@ -42,10 +42,16 @@ jobs:
         run: npm run build
         working-directory: viikko3
 
+      - name: Prepare Pages content
+        run: |
+          mkdir -p _site/viikko3
+          cp index.html styles.css viikko1.html viikko2.html _site/
+          cp -R viikko3/dist/. _site/viikko3/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: viikko3/dist
+          path: _site
 
   deploy:
     environment:
